@@ -17,6 +17,7 @@ async function connectToMongoDB() {
     throw err;
   }
 }
+
 const port = 3000;
 app.listen(port, async () => {
   await connectToMongoDB();
